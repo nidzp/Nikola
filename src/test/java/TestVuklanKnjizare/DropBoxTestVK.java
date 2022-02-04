@@ -27,7 +27,7 @@ public class DropBoxTestVK {
         Thread.sleep(1000);
         actions.moveToElement(test.knjige).perform();
         Thread.sleep(2000);
-        test.pogledajSve.click();
+        test.domaceKnjige.click();
         driver.quit();
 
     }

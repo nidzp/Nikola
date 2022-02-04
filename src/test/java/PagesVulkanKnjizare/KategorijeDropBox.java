@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 public class KategorijeDropBox extends BasePageVK {
     @FindBy (xpath = "//a [@title = \"KNJIGE\"]")
     public WebElement knjige;
-    @FindBy (xpath = "/html/body/div[1]/div[3]/nav/div/ul/li[2]/div/div/ul/li[1]/div/div/div/div/div/div[1]/div/ul/li/a")
-    public WebElement pogledajSve;
+    @FindBy (xpath = "//a [@title = \"DOMAĆE KNJIGE\"]")
+    public WebElement domaceKnjige;
 
 
 
