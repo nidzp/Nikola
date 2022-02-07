@@ -6,6 +6,8 @@ import PagesVulkanKnjizare.HomePageVK;
 import PagesVulkanKnjizare.KategorijeAddToCart;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SourceType;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 public class KategorijeTest {
@@ -25,7 +27,13 @@ public class KategorijeTest {
         test.addToCartClick();
         Thread.sleep(1000);
         actions.moveToElement(test.cart).perform();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
+        test.cart.click();
+        Thread.sleep(2000);
+        String nameOfBook = test.nameOfBook.getText();
+        System.out.println(nameOfBook);
+
+
         driver.quit();
 
 

@@ -3,6 +3,7 @@ package PagesVulkanKnjizare;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class KategorijeAddToCart extends BasePageVK {
     @FindBy (className = "btn confirm-loader")
@@ -13,6 +14,10 @@ public class KategorijeAddToCart extends BasePageVK {
     private WebElement addToCart;
     @FindBy (xpath = "//div [@class = \"header-carthor-total\"]")
     public WebElement cart;
+    @FindBy (xpath = "//*[@id=\"quantity_1\"]")
+    public WebElement quantity;
+    @FindBy (xpath = "//*[@id=\"order_cart_content\"]/div[1]/div[3]/table/tbody/tr[1]/td[2]/div[2]")
+    public WebElement nameOfBook;
 
     public KategorijeAddToCart(ChromeDriver driver) {
         super(driver);
@@ -20,4 +25,8 @@ public class KategorijeAddToCart extends BasePageVK {
 
     public void addToCartClick(){
         addToCart.click();}
-}
+
+    }
+
+
+

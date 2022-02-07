@@ -16,7 +16,6 @@ public class NajcesceTest {
         Thread.sleep(3000);
         webForm.najcesce.click();
         Thread.sleep(3000);
-        webForm.nepravilnostIli.getText();
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webForm.nepravilnostIli);
         webForm.nepravilnostIli.click();
         Thread.sleep(2000);
